@@ -40,6 +40,7 @@ gravatar = "386ab8b63b53ec2cbb58563253557f57"
 email = "tom@tomforb.es"
 github = "https//github.com/orf/"
 keybase = "https://keybase.io/orf"
+include_rss = true
 selfintro = "Tom Forbes and co"
 description = 'Personal blog of Tom Forbes'
 highlightjs = true
