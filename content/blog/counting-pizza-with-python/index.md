@@ -1,7 +1,6 @@
 ---
 title: "Counting Pizza with Python"
 date: 2016-07-28 00:03:32.296051
-permalink: /counting-pizza-with-python
 tags:
    - security
 ---

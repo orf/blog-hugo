@@ -1,7 +1,6 @@
 ---
 title: "Restricting Thrift clients to specific IP addresses with Twisted"
 date: 2013-11-11 17:17:11.872022
-permalink: /restricting-thrift-clients-to-specific-ip-addresses-with-twisted
 ---
 
 [Apache Thrift](https://thrift.apache.org/) is pretty awesome - you can build [Twisted](https://twistedmatrix.com/) bindings for your Thrift interface file that work fantastically. There is one thing that took me a while to figure out: I want to restrict clients connecting to the service to a specific set of IP addresses stored in a database.

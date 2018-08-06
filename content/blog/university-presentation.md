@@ -1,7 +1,6 @@
 ---
 title: "University Presentation"
 date: 2013-11-27 18:19:28.225421
-permalink: /university-presentation
 ---
 
 So I did a presentation on Information Security at University today. I think it went rather well, however I couldn't show a couple of the demonstrations due to some SkyDrive files only being available online. That sucked because those were my best demonstrations, but overall I was happy.

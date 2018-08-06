@@ -1,7 +1,6 @@
 ---
 title: How not to make an april fools joke
 date: 2018-04-08
-permalink: /how-not-to-make-an-april-fools-joke
 ---
 
 Picture the scene. You've recently installed the awesome [Lineage OS](https://www.lineageos.org/)

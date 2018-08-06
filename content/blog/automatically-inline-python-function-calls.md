@@ -1,7 +1,6 @@
 ---
 title: "Automatically inline Python function calls"
 date: 2013-08-01 15:54:18.038288
-permalink: /automatically-inline-python-function-calls
 tags:
    - experiments
 ---

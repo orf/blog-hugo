@@ -1,7 +1,6 @@
 ---
 title: "A test RSS feed service"
 date: 2014-04-01 02:33:57.398105
-permalink: /a-test-rss-feed-service
 tags:
     - projects
 ---

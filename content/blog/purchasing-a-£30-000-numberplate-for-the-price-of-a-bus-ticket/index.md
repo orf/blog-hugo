@@ -1,7 +1,6 @@
 ---
 title: "Purchasing a £30,000 numberplate for the price of a bus ticket"
 date: 2013-10-07 01:40:33.789415
-permalink: /purchasing-a-£30-000-numberplate-for-the-price-of-a-bus-ticket
 tags:
    - security
 ---

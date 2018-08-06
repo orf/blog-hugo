@@ -1,7 +1,6 @@
 ---
 title: "Opera is really nice"
 date: 2014-02-13 15:32:03.781144
-permalink: /opera-is-really-nice
 ---
 
 I really like the Opera browser.

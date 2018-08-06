@@ -1,7 +1,6 @@
 ---
 title: "More holes than swiss cheese"
 date: 2013-04-11 20:24:30.744797
-permalink: /more-holes-than-swiss-cheese
 tags:
    - security
 ---

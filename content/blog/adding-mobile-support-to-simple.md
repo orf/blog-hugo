@@ -1,7 +1,6 @@
 ---
 title: "Adding mobile support to Simple"
 date: 2012-09-22 17:50:04.589203
-permalink: /adding-mobile-support-to-simple
 tags:
     - simple
 ---

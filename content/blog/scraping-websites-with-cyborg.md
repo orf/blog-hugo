@@ -1,7 +1,6 @@
 ---
 title: "Scraping websites with Cyborg"
 date: 2016-01-04 00:13:02.499716
-permalink: /scraping-websites-with-cyborg
 tags:
    - projects
 ---
