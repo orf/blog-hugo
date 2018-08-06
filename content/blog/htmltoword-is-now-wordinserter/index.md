@@ -1,7 +1,6 @@
 ---
 title: "HtmlToWord is now WordInserter"
 date: 2015-05-24 20:57:06.171229
-permalink: /htmltoword-is-now-wordinserter
 tags:
    - projects
 ---

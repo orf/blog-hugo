@@ -1,7 +1,6 @@
 ---
 title: "Goodby Simple, hello Gatsby"
 date: 2018-01-16
-permalink: /goodbye-simple-hello-gatsby
 ---
 
 Many years ago, inspired by a blogging platform called [Svbtle](https://svbtle.com/), I built a clone called 

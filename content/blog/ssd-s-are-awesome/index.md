@@ -1,7 +1,6 @@
 ---
 title: "SSDs are awesome, buy one."
 date: 2013-07-25 19:54:58.422676
-permalink: /ssd-s-are-awesome
 ---
 
 I recently brought a [Samsung 840 Series Pro 256GB 2.5 inch SATA Solid State Drive](https://www.amazon.co.uk/gp/product/B009LI7CTY/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=B009LI7CTY&linkCode=as2&tag=tomscorneofth-21)<img src="https://ir-uk.amazon-adsystem.com/e/ir?t=tomscorneofth-21&l=as2&o=2&a=B009LI7CTY" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> and its easily the best PC hardware purchase I have ever made. Before I purchased it I was thinking about replacing my laptop as it was getting pretty sluggish, despite having decent specs even 2 years after I purchased it. After I installed the SSD alongside one of the original hard disks the laptop became blazing fast - it boots to the Windows 8 home screen in under 4 seconds which is faster than my Chromebook (a product designed from the ground up to boot as fast as possible).

@@ -1,7 +1,6 @@
 ---
 title: "2 years of blogging"
 date: 2014-03-06 21:04:44.165906
-permalink: /2-years-of-blogging
 tags:
     - meta
 ---

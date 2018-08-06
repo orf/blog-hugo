@@ -1,7 +1,6 @@
 ---
 title: "My Uni's timetable system sucks, so I built a better one."
 date: 2013-10-11 23:05:09.127837
-permalink: /my-uni-s-timetable-system-sucks-so-i-built-a-better-one-1
 tags:
    - projects
    - experiments

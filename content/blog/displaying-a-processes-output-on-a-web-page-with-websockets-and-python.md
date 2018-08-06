@@ -1,7 +1,6 @@
 ---
 title: "Displaying a processes output on a web page with Websockets and Python"
 date: 2013-07-15 18:40:38.700955
-permalink: /displaying-a-processes-output-on-a-web-page-with-websockets-and-python
 tags:
     - experiments
 ---

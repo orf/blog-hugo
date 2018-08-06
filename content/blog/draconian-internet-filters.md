@@ -1,7 +1,6 @@
 ---
 title: "Draconian internet filters"
 date: 2012-04-12 00:36:44.575146
-permalink: /draconian-internet-filters
 ---
 
 My universities student network is pretty restricted. I just finished coding a few changes to [Simple](https://github.com/orf/simple) and realised I couldn't push any changes to GitHub due to port restrictions. It appears that they block almost all ports bar 80 and 445 via TCP, which is fine for most users but is quite annoying for me - I often need to SSH into one of my servers or use non-standard ports.

@@ -1,7 +1,6 @@
 ---
 title: "Making a film recommendation site by cheating"
 date: 2012-05-08 05:51:42.682949
-permalink: /making-a-film-recommendation-site-by-cheating
 tags:
    - projects
 ---

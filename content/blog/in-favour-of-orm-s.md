@@ -1,7 +1,6 @@
 ---
 title: "In favour of ORM's"
 date: 2012-05-14 19:01:27.528062
-permalink: /in-favour-of-orm-s
 ---
 
 I recently read [this post](https://www.revision-zero.org/orm-haters-do-get-it) entitled "(Some) ORM Haters Do Get It" and I wanted to make a few points in favour of ORM's.

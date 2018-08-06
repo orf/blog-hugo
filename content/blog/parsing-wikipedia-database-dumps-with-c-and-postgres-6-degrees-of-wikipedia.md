@@ -1,7 +1,6 @@
 ---
 title: "Parsing Wikipedia database dumps with C# and Postgres (6 degrees of Wikipedia)"
 date: 2012-09-12 00:46:42.022160
-permalink: /parsing-wikipedia-database-dumps-with-c-and-postgres-6-degrees-of-wikipedia
 tags:
    - projects
    - experiments
