@@ -9,6 +9,17 @@ section.icons {
     padding-bottom: 20px;
 }
 
+@media (max-width: 400px) {
+    section.icons {
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+
+    section.header nav {
+        font-size: 4vw;
+    }
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
