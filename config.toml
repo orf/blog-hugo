@@ -1,0 +1,16 @@
+languageCode = "en-gb"
+title = "Tom's corner of the internet"
+baseurl = "https://tomforb.es"
+theme = "cocoa"
+
+[permalinks]
+fixed = ":title"
+blog  = ":slug"
+
+[params]
+author = "Tom Forbes"
+email = "tom@tomforb.es"
+github = "//github.com/orf/"
+
+dateform     = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
