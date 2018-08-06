@@ -1,8 +1,26 @@
 section.header {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 
 section.icons {
     order: 1;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-avatar {
+    padding-right: 10px;
+}
+
+.header-name {
+    display: flex;
+    justify-content: center;
+    /* align-self: center;    <---- REMOVE */
+    align-items: center; /* <---- NEW    */
 }
