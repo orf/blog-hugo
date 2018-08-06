@@ -1,0 +1,3 @@
+[submodule "themes/cocoa"]
+	path = themes/cocoa
+	url = git@github.com:nishanths/cocoa-hugo-theme.git
