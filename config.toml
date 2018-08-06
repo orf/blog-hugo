@@ -48,3 +48,10 @@ faviconfile = 'favicon.ico'
 dateform     = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 extracssfiles = [ "/css/override.css" ]
+
+gitalk = true
+gitalk_clientID        = "30ef9c8fae00479e5995"
+gitalk_clientSecret    = "bf97ffa63b21dba614b7f4ce47cc52acc24cfc00"
+gitalk_repo            = "https://github.com/orf/blog-hugo"
+gitalk_owner           = "orf"
+gitalk_admin           = ['orf']
