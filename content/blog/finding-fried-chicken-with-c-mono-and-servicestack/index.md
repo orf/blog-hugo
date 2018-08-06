@@ -1,5 +1,5 @@
 ---
-title: "Finding fried chicken with C#, Mono and ServiceStack"
+title: "Finding fried chicken with C-Sharp, Mono and ServiceStack"
 date: 2013-03-02 21:57:06.486262
 tags:
    - projects
