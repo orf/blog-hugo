@@ -47,7 +47,7 @@
                   owner: "{{ .Site.Params.gitalk_owner }}",
                   admin: {{ .Site.Params.gitalk_admin }},
                   body: location.href,
-                  id: "{{.RelPermalink}}",
+                  id: "{{ md5 .RelPermalink}}",
                   // facebook-like distraction free mode
                   distractionFreeMode: true,
                 })
