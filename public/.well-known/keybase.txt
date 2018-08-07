@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/orf
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tomforb.es
+  * I am orf (https://keybase.io/orf) on keybase.
+  * I have a public key ASDhMngynt-WpbRYA3jmSLM-dlRS4_6Ha6IRFb4oBzWqAwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101e5ff5c871fd05d852bfd7c70ddd976ec340751aa320a425fbf284f0fa76f57740a",
+      "host": "keybase.io",
+      "kid": "0120e13278329edf96a5b4580378e648b33e765452e3fe876ba21115be280735aa030a",
+      "uid": "234e25076943f0185e390693ee3bf219",
+      "username": "orf"
+    },
+    "merkle_root": {
+      "ctime": 1533669124,
+      "hash": "efb9172099f8607e40212884a4b4e8af4c5a4c1fff91b5ae53f174ad66a8d570cdb1aabbaa3350aba7f05d9b5a7a436a743f8d8f662fe6c2b299bc77b8d89fea",
+      "hash_meta": "0dd32eb2e38b449876c5b7c34a2927a5b1b8d4a2c7c66702e46cec23e2b5bb3d",
+      "seqno": 3422247
+    },
+    "service": {
+      "entropy": "7H3DRiEyGMx1WwR7jOa4ZfH9",
+      "hostname": "tomforb.es",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.3.0"
+  },
+  "ctime": 1533669141,
+  "expire_in": 504576000,
+  "prev": "d0c0243d8d323a55eda0c0f602dbf134623ee07084bdeef940c49f1f52974abe",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg4TJ4Mp7flqW0WAN45kizPnZUUuP+h2uiERW+KAc1qgMKp3BheWxvYWTESpcCC8Qg0MAkPY0yOlXtoMD2AtvxNGI+4HCEve75QMSfH1KXSr7EIILxDqzqwbyE2g1LvCquiSq55sT5XWoFlmHFtRxosweBAgHCo3NpZ8RAp9dmXkNDdjB+AGmax3tCITj0PhcJgrsgcFjVO776T5au2nGMd5l0DKIVYAT18pWpc9VYs3tqf6JLZssebGYoCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP2YN9nXq8GpEA5RSgtliESX1/9KwS1EofWj2eroEBYRo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/orf
+
+==================================================================
