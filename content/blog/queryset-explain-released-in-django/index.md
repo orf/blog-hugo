@@ -1,7 +1,6 @@
 +++
 title = "Queryset.explain() released in Django 2.1"
 date = "2018-08-01T20:29:29+01:00"
-draft = false
 tags = ['django']
 +++
 
