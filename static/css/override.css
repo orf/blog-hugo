@@ -2,6 +2,10 @@ section {
     max-width: 60vw;
 }
 
+body {
+    justify-content: normal;
+}
+
 section.header {
     padding-top: 30px;
     padding-bottom: 0;
