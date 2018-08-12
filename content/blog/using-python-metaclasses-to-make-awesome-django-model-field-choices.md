@@ -3,6 +3,7 @@ title: "Using Python metaclasses to make awesome Django model field choices"
 date: 2012-08-13 21:57:14.020946
 tags:
    - projects
+   - django
 ---
 
 *Edit: This code is now on PyPi: [https://pypi.python.org/pypi/django-choice-object](https://pypi.python.org/pypi/django-choice-object)*

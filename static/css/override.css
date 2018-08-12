@@ -1,6 +1,10 @@
+section {
+    max-width: 60vw;
+}
+
 section.header {
     padding-top: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 section.icons {
@@ -10,8 +14,12 @@ section.icons {
 }
 
 @media (max-width: 400px) {
+    section {
+        max-width: 100%;
+    }
+
     section.icons {
-        padding-top: 0px;
+        padding-top: 0;
         padding-bottom: 5px;
     }
 
@@ -32,6 +40,5 @@ section.icons {
 .header-name {
     display: flex;
     justify-content: center;
-    /* align-self: center;    <---- REMOVE */
-    align-items: center; /* <---- NEW    */
+    align-items: center;
 }

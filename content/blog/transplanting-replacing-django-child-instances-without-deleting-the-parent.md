@@ -1,6 +1,7 @@
 ---
 title: "Transplanting/Replacing Django child instances without deleting the parent"
 date: 2012-08-31 17:19:20.756751
+tags: ['django']
 ---
 
 Django has a very neat feature called [Multi Table Inheritance](https://docs.djangoproject.com/en/dev/topics/db/models/#multi-table-inheritance) which allows you to create a 'parent' model with common fields and a variety of 'child' ones with specific fields. For example:

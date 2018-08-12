@@ -3,6 +3,7 @@ title: "Creating a URL shortening service with Django"
 date: 2012-04-20 17:11:49.705511
 tags:
    - projects
+   - django
 ---
 
 *View it live [here](https://links.tomforb.es) or get the [code here](https://github.com/orf/tinylink)*

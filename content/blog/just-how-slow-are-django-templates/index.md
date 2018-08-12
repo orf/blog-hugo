@@ -3,6 +3,7 @@ title: "Just how slow are Django templates?"
 date: 2013-03-13 18:17:38.885589
 tags:
    - experiments
+   - django
 ---
 
 *Edit 2: I made a Django debug toolbar panel that profiles your Django templates and all their components. You can find it here: [https://pypi.python.org/pypi/django-debug-toolbar-template-timings](https://pypi.python.org/pypi/django-debug-toolbar-template-timings)*

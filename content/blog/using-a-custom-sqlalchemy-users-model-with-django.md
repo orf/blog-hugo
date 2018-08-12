@@ -1,6 +1,7 @@
 ---
 title: "Using a custom SQLAlchemy Users model with Django"
 date: 2012-04-13 19:45:31.756918
+tags: ['django']
 ---
 
 I really dislike [Django's](https://www.djangoproject.com/) ORM. For my job I have written (and continue to maintain) a large internal project that uses Django's ORM, templating language and MVC framework to serve requests, and I made the unfortunate mistake of sticking with Django's ORM instead of using the much more powerful [SQLAlchemy](https://www.sqlalchemy.org/).
