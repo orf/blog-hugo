@@ -21,15 +21,17 @@ for employee in annotated_employees:
 
 This works well but you run into an immediate problem if you want to only count *taken holidays* or *approved expenses*. 
 The results of the computations above give no way to filter on the subset of rows you want to aggregate. This is a problem 
-that I ran into a lot, so much so that I decided to have a go at fixing it in Django itself. I'm happy to say that [this 
-was merged and released in Django 2.0](https://github.com/django/django/pull/8352/)! All built in aggregations now take
-a `filter` argument that is a `Q` object, allowing you to do advanced filtering on all rows. You can even filter on 
-sub-relations!
+that I ran into a lot, so much so that I decided to have a go at fixing it in Django itself. 
+
+I'm happy to say that [this was merged and released in Django 2.0](https://github.com/django/django/pull/8352/)! 
+All built in aggregations now take a `filter` argument that is a `Q` object, allowing you to do advanced filtering on
+all rows. You can even filter on sub-relations!
 
 ```python
 annotated_employees = Employee.objects.annotate(
     total_expenses=Sum('expenses__cost', filter=Q(is_approved=True)),
     total_holidays=Count('holidays', filter=Q(cancelled=False)),
+    total_expenses_approved_by_dave=Sum('expenses__cost', filter=Q(approved_by__username='dave')),
 )
 ```
 
