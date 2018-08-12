@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://elastic-hopper-d2e021.netlify.com/* https://tomforb.es/:splat 301!
