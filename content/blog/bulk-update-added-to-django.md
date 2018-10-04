@@ -86,7 +86,7 @@ which is even more performant than `CASE`:
 
 ```sql
 update posts as t set
-    title = c.title
+    t.title = c.title
 from (values
     ('Title 1', 1),
     ('Title 2', 2)  
