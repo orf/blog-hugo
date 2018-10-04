@@ -24,10 +24,8 @@ for post in Post.objects.all():
 ```
 
 Each call to `post.save()` will execute a single, individual `UPDATE` statement, so if you've got a million rows to update 
-this can be a significant slowdown.
-
-The most performant way of achieving this is to try and push the computation down into the database. For example here we 
-tell the database to add 10,000 views to each of our posts:
+this can be a significant slowdown. The most performant way of achieving this is to try and push the computation down into
+the database. For example here we tell the database to add 10,000 views to each of our posts:
 
 ```python
 # Make our posts look really popular!
