@@ -33,7 +33,7 @@ Post.objects.update(view_count=F('view_count') + 10000)
 ```
 
 For simple numerical operations or basic string manipulations this is a great way of quickly updating a lot of rows. But 
-in our first example we want to translate our post titles to German, no databases can do that natively (not yet at least!), 
+in our first example we want to translate our post titles to German - no databases can do that natively (not yet at least!)
 so you are stuck with 1 query per model.
 
 ## The solution
@@ -48,7 +48,7 @@ for post in posts:
 Post.objects.bulk_update(posts, ['title'])
 ```
 
-Yay! Much better. With a large number of rows this is much more efficient, as the database has to do a *lot* less work.
+Yay! Much better. With a large number of rows this is much more efficient as the database has to do a *lot* less work.
 
 ## The implementation
 
@@ -76,7 +76,7 @@ SET title=(CASE WHEN id=1 THEN NULL
 WHERE id IN (1, 2)
 ```
 
-Django's expressions framework actually supported all of this already, so the method is just a nice wrapper around 
+Django's expressions framework actually supported all of this already so the method is just a nice wrapper around 
 creating the `CASE` expressions and handing a few corner cases.
 
 ## Future work
@@ -95,4 +95,4 @@ where c.id = t.id;
 ```
 
 However this is going to take a bit more work as we currency do not support `VALUES` in this way. You can 
-[follow the ticket here](https://code.djangoproject.com/ticket/29771#ticket).
+[follow the ticket for adding this support here](https://code.djangoproject.com/ticket/29771#ticket) if you're interested.
