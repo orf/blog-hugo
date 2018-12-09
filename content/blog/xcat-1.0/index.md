@@ -82,7 +82,7 @@ The kicker here is:
 - You need to explicitly configure your XPath engine to protect against all of this, which inevitably nobody does because 
   nobody expects it. It's just a simple query language, right?
   
-- There is no concept of parameterized queries like you have in every SQL adapter ever. It has to be done manually, and 
+- There is no concept of parameterized queries like you have in every SQL adapter. It has to be done manually, and 
   it has to be done **correctly in every input**. If you miss something then you're vulnerable to all of this!
   
 And this was XPath 2.0. Tom got to go to Amsterdam and
