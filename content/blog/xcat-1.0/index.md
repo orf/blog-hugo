@@ -19,7 +19,7 @@ a research paper on XPath injection flaws and we will present it at Blackhat Eur
 
 As it turns out XPath is what you get when you combine the unholy trinity of **XML**, **design-by-committee** and 
 **large quantities of drugs**. But before I get into that here's a short demo of me listing directories, reading 
-arbitrary files and dumping environment variables through a simple innocuous injection flaw using `xcat`:
+arbitrary files and dumping environment variables through a simple innocuous XPath injection flaw, using `xcat`:
  
 <center>
 <script id="asciicast-216044" src="https://asciinema.org/a/216044.js" async></script>
