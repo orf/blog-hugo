@@ -84,7 +84,7 @@ The kicker here is:
 - There is no concept of parameterized queries like you have in SQL. If you don't properly escape **every** input you're 
   putting into an XPath query then you're vulnerable to all of this!
   
-And this was XPath 2.0. Tom got to go to Amsterdamn and
+And this was XPath 2.0. Tom got to go to Amsterdam and
 [present at Black Hat Europe](https://media.blackhat.com/bh-eu-12/Siddharth/bh-eu-12-Siddharth-Xpath-Slides.pdf), and 
 the world was good.
 
