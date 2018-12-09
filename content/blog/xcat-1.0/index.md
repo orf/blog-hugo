@@ -131,6 +131,9 @@ With these we **can read any arbitrary text files**, and iterate through **all e
 Also if your internal webservice speaks JSON, well then buddy you're in luck! A simple XPath injection flaw can let the 
 attacker read all of those responses using the handy JSON functions introduced in 3.1.
 
+So, utilizing the same injection flaw and the same out-of-bound attack discussed above we can exfiltrate any readable 
+file on the filesystem, or network, quickly and cleanly.
+
 ## Summary
 
 I'm sure they are already working on XPath 4.0. I wonder if they will add DirectX support, I think it's really lacking 
