@@ -96,7 +96,7 @@ Until 2014. At which point the drugs really kicked in.
 It was decided in 2014 that XPath 2.0 was too simple. What it clearly, *clearly* lacked was dynamic function calls,
 for loops, introspection, array map/filter/reduce, associative arrays, 
 [**dynamic module loading**](https://maxtoroq.github.io/xpath-ref/fn/load-xquery-module.html), JSON parsing, 
-inline functions, **exceptions and tracebacks**.
+inline functions, exceptions and tracebacks.
 
 So now our lovely, simple XPath has evolved into:
 
