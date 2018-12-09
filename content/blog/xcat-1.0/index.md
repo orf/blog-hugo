@@ -120,7 +120,7 @@ for-each(normalize-unicode(upper-case(json-doc('x.json'))) => tokenize("\s+"),
 
 Yay! The future is here! Can you smell the progress?
 
-Aside from trying to turn XPath into some JavaScript abomination they also added two interesting functions:
+Aside from trying to turn XPath into some JavaScript abomination they also added three interesting functions:
 
 * [unparsed-text](https://maxtoroq.github.io/xpath-ref/fn/unparsed-text.html)
 * [environment-variable](https://maxtoroq.github.io/xpath-ref/fn/environment-variable.html)
