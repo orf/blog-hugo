@@ -136,5 +136,5 @@ file on the filesystem, or network, quickly and cleanly.
 
 ## Summary
 
-I'm sure they are already working on XPath 4.0. I wonder if they will add access to sockets, I think it's really lacking 
-in that area.
+I'm sure they are already working on XPath 4.0. I wonder if they will add access to raw network sockets, or hell, maybe 
+DirectX support. Why not?
