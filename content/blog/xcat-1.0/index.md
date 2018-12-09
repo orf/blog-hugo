@@ -77,7 +77,7 @@ The tl;dr is you can serve up a malicious XML file that is requested by `doc()` 
 
 Awesome! [xcat implements these attacks](https://xcat.readthedocs.io/en/latest/OOB-server/) by the way.
 
-The kicker here is:
+The real kicker here is:
 
 - You need to explicitly configure your XPath engine to protect against all of this, which inevitably nobody does because 
   nobody expects it. It's just a simple query language, right?
