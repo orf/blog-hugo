@@ -55,3 +55,7 @@ gitalk_clientSecret    = "bf97ffa63b21dba614b7f4ce47cc52acc24cfc00"
 gitalk_repo            = "blog-hugo"
 gitalk_owner           = "orf"
 gitalk_admin           = ['orf']
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
