@@ -26,7 +26,7 @@ arbitrary files and dumping environment variables through a simple innocuous XPa
 </center>
 
 *I recommend reading a little bit about what XPath is and a little bit about blind injection vulnerabilities.
-I wrote [an introduction here](http://localhost:1313/exploiting-xpath-injection-vulnerabilities-with-xcat/) or there 
+I wrote [an introduction here]({{< ref "exploiting-xpath-injection-vulnerabilities-with-xcat-1" >}}) or there 
 is the venerable [OWASP page on the topic](https://www.owasp.org/index.php/XPATH_Injection).*
 
 

@@ -21,13 +21,13 @@ In the last two years this blog has had 67,184 visitors with a peak of over 1,00
 
 The most popular posts are:
 
-  1. [Purchasing a £30,000 numberplate for the price of a bus ticket](https://tomforb.es/purchasing-a-£30-000-numberplate-for-the-price-of-a-bus-ticket)
-  2. [Breaking out of secured Python environments](https://tomforb.es/breaking-out-of-secured-python-environments)
-  3. [Just how slow are Django templates](https://tomforb.es/just-how-slow-are-django-templates)
-  4. [Opera is really nice](https://tomforb.es/opera-is-really-nice)
-  5. [Automatically inline Python function calls](https://tomforb.es/automatically-inline-python-function-calls)
-  6. [Using Python metaclasses to make awesome Django model field choices](https://tomforb.es/using-python-metaclasses-to-make-awesome-django-model-field-choices)
-  7. [Adding tail call optimization to Python](https://tomforb.es/adding-tail-call-optimization-to-python)
+  1. [Purchasing a £30,000 numberplate for the price of a bus ticket]({{< ref "purchasing-a-£30-000-numberplate-for-the-price-of-a-bus-ticket" >}})
+  2. [Breaking out of secured Python environments]({{< ref "breaking-out-of-secured-python-environments" >}})
+  3. [Just how slow are Django templates]({{< ref "just-how-slow-are-django-templates" >}})
+  4. [Opera is really nice]({{< ref "opera-is-really-nice" >}})
+  5. [Automatically inline Python function calls]({{< ref "automatically-inline-python-function-calls" >}})
+  6. [Using Python metaclasses to make awesome Django model field choices]({{< ref "using-python-metaclasses-to-make-awesome-django-model-field-choices" >}})
+  7. [Adding tail call optimization to Python]({{< ref "adding-tail-call-optimization-to-python" >}})
 
 According to [Google Webmaster tools](https://www.google.com/webmasters/) some of my popular posts have quite high google rankings for some queries:
 
