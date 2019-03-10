@@ -1,7 +1,3 @@
-section {
-    max-width: 60vw;
-}
-
 body {
     justify-content: normal;
 }
@@ -17,7 +13,7 @@ section.icons {
     padding-bottom: 20px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     section {
         max-width: 100%;
     }
