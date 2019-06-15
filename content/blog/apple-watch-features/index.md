@@ -25,6 +25,9 @@ So I built a quick script to scrape this page and produce a useful site that giv
 
 ![](./screenshot.png)
 
+You can see the [features available in Portugal here](https://applewatchfeatures.com/features/pt/), or 
+[select your own country here](https://applewatchfeatures.com/)
+
 ## How it works
 
 [The scraper itself](https://github.com/orf/apple-watch-features/blob/master/scraper.py#L74-L88) is quite simple, 
