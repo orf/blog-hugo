@@ -42,3 +42,7 @@ section.icons {
     justify-content: center;
     align-items: center;
 }
+
+video {
+    width: 100%;
+}
