@@ -1,61 +1,29 @@
 languageCode = "en-gb"
 title = "Tom's corner of the internet"
 baseurl = "https://tomforb.es/"
-theme = "cocoa"
-
+theme = "bare"
+enableGitInfo = true
 googleAnalytics = "UA-48915373-1"
 
-[[menu.main]]
-name                   = "Security"
-weight                 = -130
-identifier             = "security"
-url                    = "/tags/security/"
-
-[[menu.main]]
-name                   = "Django"
-weight                 = -120
-identifier             = "django"
-url                    = "/tags/django/"
-
-[[menu.main]]
-name                   = "Projects"
-weight                 = -110
-identifier             = "projects"
-url                    = "/tags/projects/"
-
-[[menu.main]]
-name                   = "Experiments"
-weight                 = -100
-identifier             = "experiments"
-url                    = "/tags/experiments/"
-
-
-[permalinks]
-fixed = ":title/"
-blog  = ":slug/"
+pygmentsCodeFences = true
 
 [params]
+mainSections = ["posts"]
 author = "Tom Forbes"
-gravatar = "386ab8b63b53ec2cbb58563253557f57"
 email = "tom@tomforb.es"
-github = "https://github.com/orf/"
-keybase = "https://keybase.io/orf"
-linkedin = "https://linkedin.com/in/tom-forbes"
-include_rss = true
-selfintro = "Tom Forbes and co"
-description = 'Personal blog of Tom Forbes'
-highlightjs = true
+description = 'Python developer living and working in Lisbon'
 faviconfile = 'favicon.ico'
-dateform     = "Jan 2, 2006"
-dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-extracssfiles = [ "/css/override.css" ]
 
-gitalk = false
-gitalk_clientID        = "30ef9c8fae00479e5995"
-gitalk_clientSecret    = "bf97ffa63b21dba614b7f4ce47cc52acc24cfc00"
-gitalk_repo            = "blog-hugo"
-gitalk_owner           = "orf"
-gitalk_admin           = ['orf']
+[[params.social]]
+icon = "github-circle"
+url = "https://github.com/orf/"
+
+[[params.social]]
+icon = "linkedin"
+url = "https://linkedin.com/in/tom-forbes"
+
+[permalinks]
+posts  = ":slug/"
 
 [blackfriday]
   plainIDAnchors = true

@@ -12,16 +12,17 @@ I have written and continue to maintain a reporting system for a group of [pente
 [HtmlToWord](https://github.com/orf/HtmlToWord) is a Python library that takes HTML input (like that outputted from a WYSIWYG editor) and converts it to a stream of instructions that will render the HTML onto a Word document. It supports most common HTML tags ([full list here](https://github.com/orf/HtmlToWord#supported-tags-and-extentions)) but doesn't support any form of line styles (yet?).
 
 Example:
+```python
+parser = HtmlToWord.Parser()
+Html = '''<h3>This is a title</h3>
+          <p><img src='https://placehold.it/150x150' alt='I go below the image as a caption'></p>
+          <p><i>This is <b>some</b> text</i> in a <a href="https://google.com">paragraph</a></p>
+          <ul>
+              <li>Boo! I am a <b>list</b></li>
+          </ul>'''
 
-    parser = HtmlToWord.Parser()
-    Html = '''<h3>This is a title</h3>
-              <p><img src='https://placehold.it/150x150' alt='I go below the image as a caption'></p>
-              <p><i>This is <b>some</b> text</i> in a <a href="https://google.com">paragraph</a></p>
-              <ul>
-                  <li>Boo! I am a <b>list</b></li>
-              </ul>'''
-
-    parser.ParseAndRender(Html, word, document.ActiveWindow.Selection)
+parser.ParseAndRender(Html, word, document.ActiveWindow.Selection)
+```
 
 This code will create a new Word document and fill it like so:
 

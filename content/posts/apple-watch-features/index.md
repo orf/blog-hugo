@@ -7,7 +7,7 @@ tags = ["projects"]
 tl;dr: check out https://applewatchfeatures.com/, https://iosfeatures.com/ and https://macosfeatures.com/
 
 I recently brought an Apple Watch. It's a pretty fantastic product! One thing that quite 
-annoyed me while evaluating if I should buy it is that eatures can vary quite drastically per country, 
+annoyed me while evaluating if I should buy it is that features can vary quite drastically per country, 
 and there was no simple way to get a list of the features available where I live!
 
 Apple [does of course have a page that gives a breakdown](https://www.apple.com/watchos/feature-availability/), 
