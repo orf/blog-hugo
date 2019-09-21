@@ -1,4 +1,5 @@
 .idea/
-public/*
-!public/.well-known
+public/
 **/*.DS_Store
+resources/
+node_modules/

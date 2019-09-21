@@ -7,9 +7,6 @@ tags:
    - security
 ---
 
-*tl;dr: XPath injection flaws allow you to exfiltrate a surprising amount of potentially sensitive information, the 
-lack of awareness around this and the lack of inbuilt security features makes for a potent mix*
-
 I've just released [xcat 1.0](https://github.com/orf/xcat) and it's
 [demonstration application](https://github.com/orf/xcat_app) after like 5 years of on-off development. Feels good!
 
