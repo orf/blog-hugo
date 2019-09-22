@@ -10,6 +10,7 @@ pygmentsCodeFences = true
 mainSections = ["posts"]
 author = "Tom Forbes"
 email = "tom@tomforb.es"
+repoLink = "https://github.com/org/blog-hugo"
 description = 'Python developer living and working in Lisbon'
 postcss = true
 
