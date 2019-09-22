@@ -1,21 +1,6 @@
 {
   "name": "blog-hugo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/orf/blog-hugo.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/orf/blog-hugo/issues"
-  },
-  "homepage": "https://github.com/orf/blog-hugo#readme",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
     "autoprefixer": "^9.6.1",
