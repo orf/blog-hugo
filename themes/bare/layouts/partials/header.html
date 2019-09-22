@@ -1,7 +1,7 @@
 <nav class="navbar is-transparent {{ if .Page.IsHome }}is-hidden-touch{{end}}" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="{{ $.Site.Home.Permalink }}">
-      <figure class="image is-32x32">
+      <figure class="image">
         <img alt="" class="is-rounded" src="https://www.gravatar.com/avatar/{{ md5 $.Site.Params.email }}?s=128&d=identicon">
       </figure>
     </a>

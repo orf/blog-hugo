@@ -28,6 +28,7 @@ posts  = ":slug/"
 [blackfriday]
   plainIDAnchors = true
   hrefTargetBlank = true
+  nofollowLinks = true
 
 [privacy]
   [privacy.googleAnalytics]
