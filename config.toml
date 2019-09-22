@@ -28,3 +28,10 @@ posts  = ":slug/"
 [blackfriday]
   plainIDAnchors = true
   hrefTargetBlank = true
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+  [privacy.youtube]
+    privacyEnhanced = true

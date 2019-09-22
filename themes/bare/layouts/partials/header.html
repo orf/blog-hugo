@@ -32,7 +32,7 @@
           <img alt="email" src='{{ (resources.Get "icons/icons/svg/email.svg").Permalink }}'>
         </span>
       </a>
-      {{ with .OutputFormats.Get "rss" -}}
+      {{ with $.Site.Home.OutputFormats.Get "rss" -}}
       <a class="navbar-item" href="{{ .Permalink }}" target="_blank">
         <span class="icon">
           <img alt="rss" src='{{ (resources.Get "icons/icons/svg/rss.svg").Permalink }}'>
