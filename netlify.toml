@@ -1,5 +1,6 @@
 [build]
 environment = { HUGO_VERSION = "0.58.3" }
+command = "git submodule update --init --recursive --depth=1 && hugo --minify"
 
 [context.deploy-preview]
 command = "git submodule update --init --recursive --depth=1 && hugo -b $DEPLOY_PRIME_URL --minify"
