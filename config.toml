@@ -4,7 +4,6 @@ baseurl = "https://tomforb.es/"
 theme = "bare"
 enableGitInfo = true
 googleAnalytics = "UA-48915373-1"
-
 pygmentsCodeFences = true
 
 [params]
@@ -12,7 +11,7 @@ mainSections = ["posts"]
 author = "Tom Forbes"
 email = "tom@tomforb.es"
 description = 'Python developer living and working in Lisbon'
-faviconfile = 'favicon.ico'
+postcss = true
 
 [[params.social]]
 icon = "github-circle"
