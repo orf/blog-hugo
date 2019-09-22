@@ -13,6 +13,7 @@ author = "Tom Forbes"
 email = "tom@tomforb.es"
 description = 'Python developer living and working in Lisbon'
 faviconfile = 'favicon.ico'
+postcss = true
 
 [[params.social]]
 icon = "github-circle"
