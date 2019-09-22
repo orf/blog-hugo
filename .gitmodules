@@ -7,6 +7,3 @@
 [submodule "themes/assets/icons"]
 	path = themes/assets/icons
 	url = https://github.com/Templarian/MaterialDesign.git
-[submodule "themes/bare/assets/icons"]
-	path = themes/bare/assets/icons
-	url = https://github.com/Templarian/MaterialDesign.git
