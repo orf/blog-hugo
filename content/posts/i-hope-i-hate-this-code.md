@@ -89,9 +89,13 @@ fn run_stuff(jobs: Vec<Job>) {
 }
 ```
 
-Again, this isn't great. I know it, but it works. I'm sure there is a fantastic way of not needing to clone the 
-strings being sent to the channel, or to avoid the inefficiencies around truncating the output. Maybe there is even 
-an [antigravity module](https://xkcd.com/353/) that I can use to just avoid this whole mess entirely.
+I have a feeling that this isn't great. I'm sure there is a better way to do all of this, like some fantastic way of 
+avoid the need to clone the `String`'s being sent to the channel, or to avoid the inefficiencies around truncating the 
+output. Maybe there is even an [antigravity module](https://xkcd.com/353/) that I can use to just avoid this whole mess
+entirely.
 
-Anyway, I hope one day I know enough about Rust to look back at this code and hate it in the same way that I did with my 
-music downloader. I think that's something we should all aspire to when we are learning a new language.
+But, it doesn't matter. It's more fun and I'm learning more by not getting lost in the weeds of how I think, from my 
+other experiences, that this **should** be done, and just doing it. And I hope one day I know enough about Rust to look
+back at this code and hate it in the same way that I did with my music downloader. 
+
+I think that's something we should all aspire to when we are learning a new language.
