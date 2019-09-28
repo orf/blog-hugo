@@ -29,18 +29,18 @@ lose as you grow as a developer, and this hampers your ability to pick up a new 
 
 I found this was hampering me while learning Rust. I'm in the middle of writing my first Rust project which involves 
 launching a number of individual subprocesses and displaying their output interleaved in the console. Rust is a powerful
-language with a lot of interesting features, and I wanted to try and write idiomatic code from the get-go. 
-
-So for example I started to try and make use of traits and lifetimes to pass references and avoiding cloning, but I 
+language with a lot of interesting features, and I wanted to try and write idiomatic code from the get-go. So for 
+example I started to try and make use of traits and lifetimes to pass references and avoiding cloning, but I 
 found I was spending all my time on this and it was hampering my ability to make something that *worked*. Sure, passing 
 a reference to a `String` that has a correct lifetime is more efficient and likely prettier than `string.clone()`, but 
-while learning I don't think you should get stuck on things like this. Get it working, then learn how it **should** work.
+while learning I don't think you should get stuck on things like this. 
+
+Get it working, then learn how it **should** work.
 
 Back to my project: I'm taking the stdout from a number of processes spawned via a [rayon parallel iterator](https://docs.rs/rayon/1.2.0/rayon/). 
-I want to display the current state of each thread in the console and control how they are displayed.
-
-For this I wen't with a standard [mpsc channel](https://doc.rust-lang.org/std/sync/mpsc/fn.channel.html) with multiple 
-senders and one receiver:
+I want to display the current state of each thread in the console and control how they are displayed. For this I went
+with a standard [mpsc channel](https://doc.rust-lang.org/std/sync/mpsc/fn.channel.html) with multiple senders and 
+one receiver:
 
 ```rust
 fn monitor_threads(rx: Receiver<(ThreadId, String)>) {
@@ -77,6 +77,7 @@ fn run_stuff(jobs: Vec<Job>) {
     jobs.par_iter().for_each(|j| {
         let process = j.spawn_process();
         for line in process.lines() {
+            // Truncate the line to 70 characters and send it to the monitor.
             let line = line.trim();
             if line.len() >= 70 {
                 line.truncate(70);
@@ -94,8 +95,8 @@ avoid the need to clone the `String`'s being sent to the channel, or to avoid th
 output. Maybe there is even an [antigravity module](https://xkcd.com/353/) that I can use to just avoid this whole mess
 entirely.
 
-But, it doesn't matter. It's more fun and I'm learning more by not getting lost in the weeds of how I think, from my 
-other experiences, that this **should** be done, and just doing it. And I hope one day I know enough about Rust to look
+But, **it doesn't matter**. It's more fun and I'm learning more by not getting lost in the weeds of how I think, from my 
+other experiences, that this **should** be done and just doing it. And I hope one day I know enough about Rust to look
 back at this code and hate it in the same way that I did with my music downloader. 
 
 I think that's something we should all aspire to when we are learning a new language.
