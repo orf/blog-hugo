@@ -29,11 +29,11 @@ lose as you grow as a developer and this hampers your ability to pick up a new l
 
 I found this was hampering me while learning Rust. I'm in the middle of writing my first Rust project which involves 
 launching a number of individual subprocesses and displaying their output interleaved in the console. Rust is a powerful
-language with a lot of interesting features, and I wanted to try and write idiomatic code from the get-go. So for 
+language with a lot of interesting features and I wanted to try and write idiomatic code from the get-go. So for 
 example I started to try and make use of traits and lifetimes to pass references and avoiding cloning, but I 
-found I was spending all my time on this and it was hampering my ability to make something that *worked*. Sure, passing 
-a reference to a `String` that has a correct lifetime is more efficient and likely prettier than `string.clone()`, but 
-while learning I don't think you should get stuck on things like this. 
+found I was spending all my time on this and it was getting in the way of my ability to make something that *worked*. 
+Sure, passing a reference to a `String` that has a correct lifetime is more efficient and likely prettier than 
+`string.clone()`, but while learning I don't think you should get stuck on things like this. 
 
 Get it working, then learn how it **should** work.
 
