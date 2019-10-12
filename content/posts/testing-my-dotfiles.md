@@ -64,7 +64,7 @@ fail to install. I added a simple if condition to my `.Brewfile` (which
 
 ```ruby
 # Github actions cannot install these.
-if unless ENV.has_key?('CI') then
+unless ENV.has_key?('CI') then
     brew "mas"
     mas '1Password', id:1333542190
     # etc
@@ -76,6 +76,30 @@ end
 #### Speed
 
 Gitlab actions are really quick to start. Unlike Travis MacOS builds start instantly.
+
+#### Structure
+
+Github actions have a really interesting way of working, which I think is a great balance between a "CI tool" and a 
+general-purpose "actions" framework. Every step is a pre-built action, even checking out the branch being built:
+
+```yaml
+      - uses: actions/checkout@master
+```
+
+I really like this way of doing things. It lets you fit pre-built components together to make really interesting 
+pipelines. For example there is an [`actions-rs`](https://github.com/actions-rs) organization with a number of 
+workflows to test rust projects:
+
+```yaml
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          target: macos
+      - name: Run tests
+        uses: actions-rs/cargo@v1
+        with:
+          command: test
+```
 
 #### HCL vs Yaml
 
