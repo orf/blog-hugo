@@ -5,6 +5,7 @@ theme = "bare"
 enableGitInfo = true
 googleAnalytics = "UA-48915373-1"
 pygmentsCodeFences = true
+pygmentsStyle = "friendly"
 
 [params]
 mainSections = ["posts"]
