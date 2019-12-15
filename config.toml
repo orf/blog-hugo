@@ -27,10 +27,12 @@ url = "https://linkedin.com/in/tom-forbes"
 [permalinks]
 posts  = ":slug/"
 
-[blackfriday]
-  plainIDAnchors = true
-  hrefTargetBlank = true
-  nofollowLinks = true
+[markup]
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackfriday]
+    plainIDAnchors = true
+    hrefTargetBlank = true
+    nofollowLinks = true
 
 [privacy]
   [privacy.googleAnalytics]
