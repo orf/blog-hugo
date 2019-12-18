@@ -37,7 +37,7 @@ For simple numerical operations or basic string manipulations this is a great wa
 in our first example we want to translate our post titles to German - no databases can do that natively (not yet at least!)
 so you are stuck with 1 query per model.
 
-## The solution
+## Using `bulk_update` to speed this up
 
 With `.bulk_update()` you can now update these rows with a greatly reduced number of queries (typically 1):
 
