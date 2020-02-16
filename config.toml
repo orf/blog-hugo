@@ -28,12 +28,6 @@ url = "https://linkedin.com/in/tom-forbes"
 posts  = ":slug/"
 
 [markup]
-  defaultMarkdownHandler = "blackfriday"
-  [markup.blackfriday]
-    plainIDAnchors = true
-    hrefTargetBlank = true
-    nofollowLinks = true
-
 [privacy]
   [privacy.googleAnalytics]
     anonymizeIP = true
