@@ -17,7 +17,7 @@ postcss = true
 includeAuthorInTitle = true
 
 [[params.social]]
-icon = "github-circle"
+icon = "github"
 url = "https://github.com/orf/"
 
 [[params.social]]
