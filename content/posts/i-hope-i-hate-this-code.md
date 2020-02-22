@@ -24,8 +24,8 @@ With the experience I've gained since I wrote that code I know how much is wrong
 minified and doesn't contain newlines? What if the attribute orderings change? What if the `download` class changes? 
 And don't even think about [using regex to parse it](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags).
 
-But at the time I didn't know how to parse HTML and I didn't care. I think there's a certain liberty to that which you 
-lose as you grow as a developer and this hampers your ability to pick up a new language.
+**But at the time I didn't know how to parse HTML and I didn't care. I think there's a certain liberty to that which you 
+lose as you grow as a developer and this hampers your ability to pick up a new language.**
 
 I found this was hampering me while learning Rust. I'm in the middle of writing my first Rust project which involves 
 launching a number of individual subprocesses and displaying their output interleaved in the console. Rust is a powerful
