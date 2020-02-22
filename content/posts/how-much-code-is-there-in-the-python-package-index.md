@@ -5,7 +5,7 @@ tags:
    - experiments
 ---
 
-Sometimes python related questions pop into my head, like [how slow are Django templates]({{< ref "just-how-slow-are-django-templates" >}}) or how [hard would it be to inline Python function calls](https://tomforb.es/automatically-inline-python-function-calls) and I usually end up spending a couple of hours trying to answer them. The question that conveniently popped into my head yesterday as I was trying to avoid revising was *"How much code is there in the [Python Packaging Index](https://pypi.python.org/pypi), and how hard is it to count?"*
+Sometimes python related questions pop into my head, like [how slow are Django templates]({{< ref "posts/just-how-slow-are-django-templates" >}}) or how [hard would it be to inline Python function calls](https://tomforb.es/automatically-inline-python-function-calls) and I usually end up spending a couple of hours trying to answer them. The question that conveniently popped into my head yesterday as I was trying to avoid revising was *"How much code is there in the [Python Packaging Index](https://pypi.python.org/pypi), and how hard is it to count?"*
 
 This seemed like a nice distraction from real work, so I set about trying to answer it. I will quickly run through how I made a program to answer this question, then present some statistics I gathered.
 
@@ -54,4 +54,3 @@ GitHub is by far the most popular homepage for packages with over **16,000** ref
 This graph plots the percentage of comments across all packages. **1101** packages contained 50% or more comments, and **14,199** contained less than 15%
 
 
-    

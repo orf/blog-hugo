@@ -5,7 +5,7 @@ tags:
    - security
 ---
 
-After discovering [the flaw in Dell's System Detect software]({{< ref "dell-system-detect-rce-vulnerability" >}}) I looked into other similar software for issues. This post details two issues I found with the HP Product Detection software and explores the protections HP put in place. I'm also going to explain how they could be easily bypassed to allow an attacker to force files to be downloaded, read arbitrary data, registry keys and system information through the users browser with little or no interaction.
+After discovering [the flaw in Dell's System Detect software]({{< ref "posts/dell-system-detect-rce-vulnerability" >}}) I looked into other similar software for issues. This post details two issues I found with the HP Product Detection software and explores the protections HP put in place. I'm also going to explain how they could be easily bypassed to allow an attacker to force files to be downloaded, read arbitrary data, registry keys and system information through the users browser with little or no interaction.
 
 
 *Timeline:*
@@ -63,7 +63,7 @@ The line we need to focus on is this:
     
     if (!new Uri(uriString).GetComponents(UriComponents.Host, UriFormat.Unescaped).EndsWith("hp.com"))
 
-In English this translates to **if the hostname ends with hp.com**, which is the **only way the program authenticates a valid request**. On the face of it this might look like a perfectly valid way to ensure that a HTTP request came from a valid HP domain however it is critically flawed. The check only checks if the domain **ends** with hp.com, so if a hacker were to register the domain **nothp.com** and make a request from there then it would pass the check. Apart from [giving me Déjà vu]({{< ref "dell-system-detect-rce-vulnerability" >}}) it also gives me a foot in the door - any command I issue will be processed by the software. So let's see what commands can be processed.
+In English this translates to **if the hostname ends with hp.com**, which is the **only way the program authenticates a valid request**. On the face of it this might look like a perfectly valid way to ensure that a HTTP request came from a valid HP domain however it is critically flawed. The check only checks if the domain **ends** with hp.com, so if a hacker were to register the domain **nothp.com** and make a request from there then it would pass the check. Apart from [giving me Déjà vu]({{< ref "posts/dell-system-detect-rce-vulnerability" >}}) it also gives me a foot in the door - any command I issue will be processed by the software. So let's see what commands can be processed.
 
 
 ### Triggering a download
@@ -139,4 +139,3 @@ I've described two flaws with the HP Solutions Framework that can be exploited t
 The second attack is more targeted than the first and requires more setup, but could be used to read sensitive user documents or information and pass it back to the attacker. This should be mitigated first by using HTTPS and second by explicitly verifying the servers SSL certificate to ensure it is connecting to a valid HP controlled server.
 
 While I don't want to be too critical of HP because their response was prompt and speedy I do think that their security procedures are lacking if such software can be published by them. That being said they do make it clear to users that they are downloading the entire Support Solutions Framework and explain the functionality it includes.
-    
