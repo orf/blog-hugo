@@ -63,7 +63,7 @@ fn monitor_threads(rx: Receiver<(ThreadId, String)>) {
 }
 ```
 
-I'm not sure a `Vec` is the best structure here, and I doubt this is the most efficient way of updating it.
+I tried to use a HashMap but that didn't work for a reason I cannot remember. I'm certain a `Vec` is not the best structure here, and I doubt this is the most efficient way of updating it, but it works.
 
 To send updates to it:
 
