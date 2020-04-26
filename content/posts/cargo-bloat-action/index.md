@@ -1,7 +1,6 @@
 ---
 title: "Managing Rust bloat with Github Actions"
 date: 2020-04-23T22:42:54+01:00
-draft: true
 tags: 
 - projects
 ---
