@@ -22,7 +22,7 @@ View it on Github: https://github.com/orf/cargo-bloat-action/
 Cargo Bloat Action is a Github Action that gives you insights into how code and dependency changes change both your 
 dependency tree and your final binary size. 
 
-{{< image-box name=comment.png fit="700x700" >}}
+{{< image-box name=comment.png >}}
 An example pull request comment
 {{< /image-box >}}
 
