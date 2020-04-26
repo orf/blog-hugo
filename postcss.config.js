@@ -1,7 +1,7 @@
 
 const prodPlugins = {
     '@fullhuman/postcss-purgecss': {
-        content: ['public/**/*.html'],
+        content: ['public/**/*.html', 'themes/bare/**/*.html'],
         whitelist: [
             'highlight',
             'language-bash',
@@ -20,5 +20,5 @@ const prodPlugins = {
 }
 
 module.exports = {
-    plugins: process.env.HUGO_ENVIRONMENT === "production" ? prodPlugins : {}
+    plugins: {} // process.env.HUGO_ENVIRONMENT === "production" ? prodPlugins : {}
 };
