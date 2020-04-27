@@ -30,7 +30,10 @@ the way it had to fetch the entire catalogue of icons when I was just using four
 system they are pushing but I found that it absolutely destroyed the page load metrics I was looking at in Chrome. It 
 also ended up making a lot of requests:
 
-![](screenshot.png)
+{{< image-box name=screenshot.png >}}
+Waterfall!
+{{< /image-box >}}
+
 
 ### Stripping unused css
 
