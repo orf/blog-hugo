@@ -73,11 +73,10 @@ versus the simplicity of other databases. Here is how you get the query executio
    2. You also have no real way of knowing if this function is available or can be called without error
 
 So this is a pretty complex workflow to just get a query plan, but it's doable. I had this feature working in my 
-branch and it seemed OK. Until I hit a blocker.
+branch and it seemed OK. Until I hit a blocker:
 
-<center><strong>You cannot explain parameterized queries</strong></center>
-
-<center>![](./wat.jpg)</center>
+<div class="has-text-centered"><strong>You cannot explain parameterized queries!</strong></div>
+<br/>
 
 Yeah. So... that's a blocker. All queries in Django are parameterized to prevent SQL injections, so rather than executing 
 ```SQL

@@ -28,6 +28,10 @@ url = "https://linkedin.com/in/tom-forbes"
 posts  = ":slug/"
 
 [markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe=true
+
 [privacy]
   [privacy.googleAnalytics]
     anonymizeIP = true
