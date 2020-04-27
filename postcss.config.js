@@ -20,5 +20,5 @@ const prodPlugins = {
 }
 
 module.exports = {
-    plugins: {} // process.env.HUGO_ENVIRONMENT === "production" ? prodPlugins : {}
+    plugins: process.env.HUGO_ENVIRONMENT === "production" ? prodPlugins : {}
 };
