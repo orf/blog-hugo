@@ -3,6 +3,7 @@ title: "Managing Rust bloat with Github Actions"
 date: 2020-04-23T22:42:54+01:00
 tags: 
 - projects
+- rust
 ---
 
 Cargo and [crates.io](https://crates.io/) are an amazing part of the Rust ecosystem and one of the things that makes 
