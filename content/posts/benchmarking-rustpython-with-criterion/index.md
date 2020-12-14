@@ -1,7 +1,6 @@
 ---
 title: "Benchmarking Rustpython With Criterion"
 date: 2020-12-14T13:27:30Z
-draft: true
 tags: 
 - projects
 - rust
