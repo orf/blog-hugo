@@ -22,8 +22,8 @@ Nope, I've forgotten the name. Ok, well I'm *sure* Apple Music has some form of 
 through... right?
 
 Nope. Nothing. Nada. Seriously. To be clear there is a "recently played" playlist, but if you've been listening to a 
-station then it **only shows that** and not the songs you listened to. So very useful. I even tried creating a
-smart playlist in my desktop Apple Music, but this only works with music in your library.
+dynamic station then it **only shows that** and not the **actual music you recently played**. Wow. Very useful. 
+I even tried creating a smart playlist in my desktop Apple Music, but this only works with music in your library.
 
 {{< figure src="screenshot.png" >}}
 
