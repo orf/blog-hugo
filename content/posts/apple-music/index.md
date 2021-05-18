@@ -28,7 +28,8 @@ I even tried creating a smart playlist in my desktop Apple Music, but this only 
 {{< figure src="screenshot.png" >}}
 
 So we've got a music discovery service that does not let me discover music I've listened to. It's unresponsive, 
-frequently crashes and sometimes creating a station just outright fails. But not with a message, oh no. Just a blank page. 
+frequently crashes, often de-syncs from my HomePod and sometimes creating a station just outright fails. 
+But not with a message, oh no. Just a blank page. 
 
 And to top it off now I'm stuck with the faint idea of a tune going around my head that I just cannot place.
 
