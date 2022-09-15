@@ -11,3 +11,8 @@ charset = utf-8
 [*.md]
 indent_style = space
 max_line_length = 120
+
+[*.sql]
+indent_size = 2
+indent_style = space
+max_line_length = 80

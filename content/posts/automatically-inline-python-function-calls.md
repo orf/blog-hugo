@@ -109,7 +109,7 @@ This visits all call objects and if we are calling a function we want to inline 
 ```python
 class SimpleFunctionHandler(BaseFunctionHandler):
     def inline(self, node, func_to_inline):
-        # Its a simple function we have here. That means it is one statement and we can simply replace the
+        # Its a simple function we have here. That means it is access-logs statement and we can simply replace the
         # call with the inlined functions body
         body = func_to_inline.body[0]
         if isinstance(body, ast.Return):
@@ -125,4 +125,3 @@ There are some serious limitations with this code:
  2. **Only inlines functions in the same module**: To keep things simple only calls in the same module are inlined.
  3. **Inlined class functions can't reference any double underscore attributes**: Accessing self.__attr is about as 'private' as you can get in Python. The attribute lookup is prefixed with the class name, which we can't easily detect while inlining.
  4. **Everything will break**: Python is very dynamic, you may wish to replace functions at runtime. Obviously if the functions have been inlined then this won't have any effect.
-    

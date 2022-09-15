@@ -1,24 +1,37 @@
 <div class="columns is-centered">
-    <div class="column is-three-quarters-desktop">
-        <div class="card">
-            <div class="card-image">
-                <figure class="image" style="margin: 0">
-                    {{ $img := .Page.Resources.GetMatch (.Get "name") }}
-                    {{ with (.Get "fit") }}
-                    {{ $scaled := $img.Fit . }}
-                    <img src='{{ $scaled.Permalink | safeURL }}'/>
-                    {{ else }}
-                    <img src='{{ $img.Permalink | safeURL }}'/>
-                    {{end}}
-                </figure>
-            </div>
-            {{ with .Inner}}
-            <div class="card-content" style="padding-top: 0; padding-bottom: 15px">
-                <div class="content has-text-centered is-size-7-mobile">
-                    {{ . | safeHTML}}
-                </div>
-            </div>
-            {{ end}}
+  {{ $width := (.Get "width") | default "is-three-quarters-desktop"}}
+  {{ $top := (.Get "top") | default false }}
+  <div class='column {{ $width }}'>
+    <div class="card">
+      {{ if $top }}
+      {{ with .Inner}}
+      <div class="card-content" style="padding-top: 0; padding-bottom: 15px">
+        <div class="content has-text-centered is-size-7-mobile">
+          {{ . | safeHTML}}
         </div>
+      </div>
+      {{ end}}
+      {{ end }}
+      <div class="card-image">
+        <figure class="image" style="margin: 0">
+          {{ $img := .Page.Resources.GetMatch (.Get "name") }}
+          {{ with (.Get "fit") }}
+          {{ $scaled := $img.Fit . }}
+          <img src='{{ $scaled.Permalink | safeURL }}'/>
+          {{ else }}
+          <img src='{{ $img.Permalink | safeURL }}'/>
+          {{end}}
+        </figure>
+      </div>
+      {{ if not $top }}
+      {{ with .Inner}}
+      <div class="card-content" style="padding-top: 0; padding-bottom: 15px">
+        <div class="content has-text-centered is-size-7-mobile">
+          {{ . | safeHTML}}
+        </div>
+      </div>
+      {{ end}}
+      {{ end }}
     </div>
+  </div>
 </div>

@@ -1,0 +1,33 @@
+{{ $csvPath :=  (path.Join "content" (path.Dir .Page.File.Path) (.Get "name") "example.csv") }}
+{{ $sqlPath :=  (path.Join "content" (path.Dir .Page.File.Path) (.Get "name") "query.sql") }}
+{{ $sqlContents := readFile $sqlPath }}
+{{ $csv := getCSV "," $csvPath }}
+{{ $header := index $csv 0 }}
+{{ $body := after 1 $csv }}
+<div class="columns is-centered is-">
+  {{ $width := (.Get "width") | default "is-three-fifths"}}
+  <div class="column {{ $width }}">
+    {{ (printf "```sql\n%s\n```" $sqlContents) | markdownify | safeHTML}}
+  </div>
+  <div class='column'>
+    <h3>Output</h3>
+    <table class="table is-bordered is-narrow">
+      <thead>
+      <tr>
+        {{ range $i, $r := $header }}
+        <th>{{ $r }}</th>
+        {{ end }}
+      </tr>
+      </thead>
+      <tbody>
+      {{ range $i, $r := $body }}
+      <tr>
+        {{ range $idx, $v := $r }}
+        <td>{{ $v }}</td>
+        {{ end}}
+      </tr>
+      {{ end }}
+      </tbody>
+    </table>
+  </div>
+</div>

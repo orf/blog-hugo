@@ -1,0 +1,4 @@
+key, segment, index
+foo/bar, 1, 1
+foo/baz, 1, 2
+foo/qux, 2, 1

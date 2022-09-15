@@ -1,0 +1,4 @@
+prefix, key
+foo/b, foo/bar
+foo/b, foo/baz
+foo/q, foo/qux

@@ -1,0 +1,23 @@
+{{ $csvName := .Page.Resources.GetMatch (.Get "name") }}
+{{ $csvPath :=  (path.Join "content" (path.Dir .Page.File.Path) $csvName) }}
+{{ $csv := getCSV "," $csvPath }}
+{{ $header := index $csv 0 }}
+{{ $body := after 1 $csv }}
+<table class="table is-bordered is-narrow">
+  <thead>
+  <tr>
+    {{ range $i, $r := $header }}
+    <th>{{ $r }}</th>
+    {{ end }}
+  </tr>
+  </thead>
+  <tbody>
+  {{ range $i, $r := $body }}
+  <tr>
+    {{ range $idx, $v := $r }}
+    <td>{{ $v }}</td>
+    {{ end}}
+  </tr>
+  {{ end }}
+  </tbody>
+</table>

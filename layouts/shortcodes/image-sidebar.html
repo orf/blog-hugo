@@ -1,0 +1,29 @@
+<div class="columns is-centered is-">
+  {{ $width := (.Get "width") | default "is-three-quarters-desktop"}}
+  {{ with .Inner}}
+  <div class="column {{ $width }}">
+    {{ . | markdownify | safeHTML}}
+  </div>
+  {{ end}}
+  <div class='column'>
+    <h3 class="is-size-4-desktop is-size-3-mobile">{{ .Get "title" }}</h3>
+    <div class="card">
+      <div class="card-image">
+        <figure class="image" style="margin: 0">
+          {{ if (.Get "goat") }}
+          {{ $goatPath :=  (path.Join "content" (path.Dir .Page.File.Path) (.Get "goat")) }}
+          {{ (printf "```goat\n%s\n```" (readFile $goatPath)) | markdownify | safeHTML }}
+          {{ else }}
+          {{ $img := .Page.Resources.GetMatch (.Get "name") }}
+          {{ with (.Get "fit") }}
+          {{ $scaled := $img.Fit . }}
+          <img src='{{ $scaled.Permalink | safeURL }}'/>
+          {{ else }}
+          <img src='{{ $img.Permalink | safeURL }}'/>
+          {{end}}
+          {{end}}
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
