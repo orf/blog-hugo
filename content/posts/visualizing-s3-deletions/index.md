@@ -24,7 +24,7 @@ are a special kind of object that hides the key from standard `ListObjects` call
 longer present.
 
 After a configurable amount of time all "noncurrent versions" of objects are expired,
-which means all data that has a delete marker as it's "current version" will be permanently erased. After this, S3
+which means all data that has a delete marker as its "current version" will be permanently erased. After this, S3
 cleans up all "expired delete markers" - that is delete markers where all the data for the key has been deleted.
 
 <div style="font-size: 80%">
@@ -43,7 +43,7 @@ The visualization represents this flow with yellow, red and black
 
 ## Getting the data
 
-We want to represent each file as a pixel in a GIF image and change it's colour as it's state changes. To do this we
+We want to represent each file as a pixel in a GIF image and change its colour as it's state changes. To do this we
 need two sets of data: the set of all keys in the bucket and the set of all state changes on the keys.
 
 There are two sources of data we can utilize to build all the information we need to create the visualisation:
