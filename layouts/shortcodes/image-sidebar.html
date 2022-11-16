@@ -1,12 +1,13 @@
-<div class="columns is-centered is-">
+{{ if (.Get "content-title") }}
+  <h3>{{ (.Get "content-title") }}</h3>
+{{ end }}
+
+<div class="columns is-desktop is-centered is-flex-direction-row-reverse">
   {{ $width := (.Get "width") | default "is-three-quarters-desktop"}}
-  {{ with .Inner}}
-  <div class="column {{ $width }}">
-    {{ . | markdownify | safeHTML}}
-  </div>
-  {{ end}}
   <div class='column'>
-    <h3 class="is-size-4-desktop is-size-3-mobile">{{ .Get "title" }}</h3>
+    {{ if (.Get "title") }}
+      <h3 class="is-size-4-desktop">{{ .Get "title" }}</h3>
+    {{ end }}
     <div class="card">
       <div class="card-image">
         <figure class="image" style="margin: 0">
@@ -25,5 +26,10 @@
         </figure>
       </div>
     </div>
+  </div>
+  <div class="column {{ $width }}">
+    {{ with .Inner}}
+    {{ . | markdownify | safeHTML}}
+    {{ end}}
   </div>
 </div>

@@ -1,6 +1,6 @@
 languageCode = "en-gb"
 title = "Tom's corner of the internet"
-baseurl = "https://tomforb.es/"
+baseurl = "/"
 theme = "bare"
 enableGitInfo = true
 googleAnalytics = "UA-218923522-1"
@@ -13,7 +13,6 @@ author = "Tom Forbes"
 email = "tom@tomforb.es"
 repoLink = "https://github.com/orf/blog-hugo"
 description = 'Python developer living and working in London'
-postcss = true
 includeAuthorInTitle = true
 
 [[params.social]]
