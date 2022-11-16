@@ -14,6 +14,7 @@ email = "tom@tomforb.es"
 repoLink = "https://github.com/orf/blog-hugo"
 description = 'Python developer living and working in London'
 includeAuthorInTitle = true
+postcss = true
 
 [[params.social]]
 icon = "github"

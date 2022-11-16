@@ -1,0 +1,24 @@
+
+const prodPlugins = {
+    '@fullhuman/postcss-purgecss': {
+        content: ['public/**/*.html', 'themes/bare/**/*.html'],
+        whitelist: [
+            'highlight',
+            'language-bash',
+            'pre',
+            'video',
+            'code',
+            'content',
+            'h3',
+            'h4',
+            'ul',
+            'li'
+        ]
+    },
+    autoprefixer: {},
+    cssnano: {preset: 'default'}
+}
+
+module.exports = {
+    plugins: {}
+};
