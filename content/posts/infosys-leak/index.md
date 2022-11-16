@@ -129,6 +129,6 @@ risk that someone malicious gains access to the account? I opted to close the do
 Infosys has a lot to say about security, but I'm not sure if they practice what they preach.
 
 They appear to issue AWS keys to developers that are not rotated for several years as well as store these keys in git. 
-They don't 
+They also don't have a clear place to report security issues like this. 
 
 Everything I've seen has been pretty shocking in terms of security and completely against any form of best practices.
