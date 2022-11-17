@@ -10,7 +10,7 @@ tags:
 You can check out [their website for a lot of buzwords](https://www.infosys.com/services/cyber-security.html), but it's 
 clear from all the stock photos that they take security Very Seriously Indeed ™️. 
 
-However, from what I've found recently, it seems that Infosys follow the following Comprehensive Management-Endorsed 
+However, from what I've found recently, it seems that Infosys use the following Comprehensive Management-Endorsed 
 Proficiently Driven Cybersecurity Strategy and Framework items:
 
 - Don't use AWS roles or temporary credentials for your developers
