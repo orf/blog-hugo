@@ -1,6 +1,6 @@
 languageCode = "en-gb"
 title = "Tom's corner of the internet"
-baseurl = "/"
+baseurl = "https://tomforb.es/"
 theme = "bare"
 enableGitInfo = true
 googleAnalytics = "UA-218923522-1"
