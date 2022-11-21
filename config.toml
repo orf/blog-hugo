@@ -3,7 +3,6 @@ title = "Tom's corner of the internet"
 baseurl = "/"
 theme = "bare"
 enableGitInfo = true
-googleAnalytics = "UA-218923522-1"
 pygmentsCodeFences = true
 pygmentsStyle = "friendly"
 
