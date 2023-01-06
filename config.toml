@@ -28,6 +28,9 @@ posts = ":slug/"
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.highlight]
+noClasses = false
+theme = "monokai"
 
 [privacy]
 [privacy.googleAnalytics]
