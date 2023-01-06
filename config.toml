@@ -3,8 +3,6 @@ title = "Tom's corner of the internet"
 baseurl = "/"
 theme = "bare"
 enableGitInfo = true
-pygmentsCodeFences = true
-pygmentsStyle = "friendly"
 
 [params]
 mainSections = ["posts"]
@@ -23,16 +21,32 @@ icon = "linkedin"
 url = "https://linkedin.com/in/tom-forbes"
 
 [permalinks]
-posts  = ":slug/"
+posts = ":slug/"
 
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]
-unsafe=true
+unsafe = true
+
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ''
+hl_inline = false
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+noHl = false
+style = 'colorful'
+tabWidth = 4
+
 
 [privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    respectDoNotTrack = true
-  [privacy.youtube]
-    privacyEnhanced = true
+[privacy.googleAnalytics]
+anonymizeIP = true
+respectDoNotTrack = true
+[privacy.youtube]
+privacyEnhanced = true

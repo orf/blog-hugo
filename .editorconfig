@@ -16,3 +16,6 @@ max_line_length = 120
 indent_size = 2
 indent_style = space
 max_line_length = 80
+
+[layouts/_default/_markup/render-link.html]
+insert_final_newline = false
