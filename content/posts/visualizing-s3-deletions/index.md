@@ -6,7 +6,7 @@ tags:
 - projects
 ---
 
-{{< image-sidebar name=animation_5.gif width="is-three-fifths-desktop" title="The visualization">}}
+{{< image-sidebar name=animation_5.gif width="is-three-fifths-desktop" title="The visualization" >}}
 A few weeks ago I had the chance to delete 1 petabyte of data spread across 1 billion objects from S3. Well, actually 
 940 million, but close enough to the click-baitable 1 billion. I thought it would be interesting challenge to try and 
 visualize the execution of these deletions and possibly gain some insights into how

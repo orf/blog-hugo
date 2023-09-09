@@ -5,7 +5,7 @@ tags:
 - security
 ---
 
-{{< image-sidebar name=website.png width="is-three-fifths-desktop" content-title="Infosys has a lot to say about security">}}
+{{< image-sidebar name=website.png width="is-three-fifths-desktop" content-title="Infosys has a lot to say about security" >}}
 
 You can check out [their website for a lot of buzwords](https://www.infosys.com/services/cyber-security.html), but it's 
 clear from all the stock photos that they take security Very Seriously Indeed ™️. 

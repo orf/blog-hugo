@@ -74,7 +74,7 @@ This took ~27 hours to run on my macbook using my home internet connection.
 
 I took the process outlined above and converted it into a Rust tool: https://github.com/orf/aws-creds-scanner
 
-{{< image-sidebar name=report.png width="is-three-fifths-desktop" content-title="">}}
+{{< image-sidebar name=report.png width="is-three-fifths-desktop" content-title="" >}}
 
 This tool runs periodically via Github Actions and sca  ns new releases from PyPi, HexPM and RubyGems for AWS keys. If there 
 are any keys found then a report is [generated and committed](https://github.com/orf/aws-creds-scanner/blob/main/keys/pypi/pkg-testaws-handsonter/pkg_testaws_handsonter-0.0.1-py3-none-any.whl.md) to repository.
