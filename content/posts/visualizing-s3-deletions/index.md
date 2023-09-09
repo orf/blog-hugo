@@ -27,7 +27,7 @@ After a configurable amount of time all "noncurrent versions" of objects are exp
 which means all data that has a delete marker as its "current version" will be permanently erased. After this, S3
 cleans up all "expired delete markers" - that is delete markers where all the data for the key has been deleted.
 
-<div style="font-size: 80%">
+<div>
 
 ```goat
    .---------------------.   .-------------.   .-----------------------. 

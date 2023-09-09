@@ -10,7 +10,7 @@ I'm a full time nerd, even when I'm ordering pizza online I can't stop myself fr
 Below is a graph of the data I collected over a 2 weeks of monitoring the Dominos website, it gives a good indication of how Pizza sales fluctuate during this time. The data was collected early 2016 and I contacted Dominoes with details about this potential issue. I received no reply, but they did however fix it as explained below.
 
 <div>
-    <a href="https://plot.ly/~tomd324/11/" target="_blank" title="Dominoes Order Volume" style="display: block; text-align: center;"><img src="https://plot.ly/~tomd324/11.png" alt="Dominoes Order Volume" style="max-width: 100%;width: 936px;"  width="936" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <a href="https://plot.ly/~tomd324/11/" target="_blank" title="Dominoes Order Volume"><img src="https://plot.ly/~tomd324/11.png" alt="Dominoes Order Volume" width="936"/></a>
     <script data-plotly="tomd324:11"  src="https://plot.ly/embed.js" async></script>
 </div>
 
@@ -75,4 +75,3 @@ You can see the first crash happens right after ~300 orders in 30 seconds, perha
 Don't expose incrementing, integer primary keys of anything sensitive, they can be used to extract trends over time. Even if you attempt to protect yourself you might be returning a 404 for an invalid ID and 403 for a valid one, which still tells an attacker which orders are valid and which are not.
 
 I've been struggling with myself over whether to call this a security issue. It's technically leaking information that you might not want public but it's not exactly going to allow an attacker to do anything bad to your site.
-    
