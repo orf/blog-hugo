@@ -1,7 +1,6 @@
 ---
 title: "XCat 1.0 released or: XPath injection issues are severely underrated"
 date: "2018-12-09T19:58:01Z"
-draft: false
 tags:
    - projects
    - security
