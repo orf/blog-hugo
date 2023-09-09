@@ -104,7 +104,7 @@ nicely for periodic tasks like this.
 The oldest still active key was uploaded nearly 10 years ago in 2013, and the newest one was published on the 20th of 
 December.
 
-{{< image-sidebar name=breakdown.png width="is-three-fifths-desktop" content-title="">}}
+{{< image-sidebar name=breakdown.png width="is-three-fifths-desktop" content-title="" >}}
 
 ### Key Types
 

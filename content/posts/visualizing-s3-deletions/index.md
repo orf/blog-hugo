@@ -54,7 +54,7 @@ Setting these up for querying with Athena is fairly simple and well documented.
 
 ### Segmenting our image
 
-{{< image-sidebar goat=box.goat width="is-three-fifths-desktop" title="Example segments">}}
+{{< image-sidebar goat=box.goat width="is-three-fifths-desktop" title="Example segments" >}}
 
 Once we have this data in an Athena table, we need to assign a pixel to every file in S3. Naively this could be
 assumed to be as simple as:
