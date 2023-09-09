@@ -23,7 +23,7 @@ Proficiently Driven Cybersecurity Strategy and Framework items:
 
 {{< /image-sidebar >}}
 
-{{< image-sidebar name=github.png width="is-three-fifths-desktop" content-title="The Leak">}}
+{{< image-sidebar name=github.png width="is-three-fifths-desktop" content-title="The Leak" >}}
 
 This morning I woke up to a very [strange pull request](https://github.com/orf/pypi-data/pull/2) on my [pypi-data](https://github.com/orf/pypi-data) project. 
 This project contains metadata for every package published on PyPi ([e.g Flask](https://github.com/orf/pypi-data/blob/main/release_data/f/l/flask.json)), 
@@ -41,7 +41,7 @@ something interesting.
 
 {{< /image-sidebar >}}
 
-{{< image-sidebar name=code.png width="is-three-fifths-desktop" content-title="The Keys">}}
+{{< image-sidebar name=code.png width="is-three-fifths-desktop" content-title="The Keys" >}}
 
 At the top of the file, embedded as string constants, was an AWS access key and AWS secret key. The rest of the code 
 seemed to be interacting with a S3 bucket in pretty standard ways: pulling data, loading it into pandas and computing 
@@ -55,7 +55,7 @@ active!
 
 {{< /image-sidebar >}}
 
-{{< image-sidebar name=bucket.jpg width="is-three-fifths-desktop" content-title="The Bucket">}}
+{{< image-sidebar name=bucket.jpg width="is-three-fifths-desktop" content-title="The Bucket" >}}
 
 So this is definitely something that should be reported to them. I always let my curiosity get the better of me, so I 
 listed the root of the bucket. From the contents it seems that this bucket contains data used to train COVID prediction 
@@ -66,7 +66,7 @@ some form of clinical data, which I did not access to verify:
 
 {{< /image-sidebar >}}
 
-{{< image-sidebar name=access.png width="is-three-fifths-desktop" content-title="The Permissions">}}
+{{< image-sidebar name=access.png width="is-three-fifths-desktop" content-title="The Permissions" >}}
 
 By now it was clear that this was pretty serious. There's a bucket potentially containing some form of medical data, 
 with the contents listable by a leaked, now public set of IAM credentials.
@@ -78,7 +78,7 @@ idea to assign these to long-lived credentials issued to developers.
 
 {{< /image-sidebar >}}
 
-{{< image-sidebar name=takedown.png width="is-three-fifths-desktop" content-title="The Takedown">}}
+{{< image-sidebar name=takedown.png width="is-three-fifths-desktop" content-title="The Takedown" >}}
 
 Meanwhile I received a "takedown request" for a specific file in the pypi-data repository, specifically for the data 
 associated with the [reaction-utils package](https://pypi.org/project/reaction-utils/). It seems that it's a pretty 
