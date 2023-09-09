@@ -1,7 +1,6 @@
 ---
 title: "Invited to join the Django software foundation"
 date: "2018-12-02T19:58:01Z"
-draft: false
 tags:
    - django
 ---
