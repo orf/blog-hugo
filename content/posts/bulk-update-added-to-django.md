@@ -1,8 +1,8 @@
-+++
-title = "Using bulk update in Django 2.2"
-date = "2018-10-04T19:36:02+01:00"
-tags = ['django']
-+++
+---
+title: "Using bulk update in Django 2.2"
+date: "2018-10-04T19:36:02+01:00"
+tags: ['django']
+---
 
 My work on [adding `bulk_update()` to Django](https://github.com/django/django/pull/9606) has
 been merged and will be released in Django 2.2! Like my [filtered aggregates feature](/filtered-aggregates-lands-in-django-2.0/) 

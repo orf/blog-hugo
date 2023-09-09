@@ -1,8 +1,8 @@
-+++
-title = "Filtered aggregates lands in Django 2.0!"
-date = "2018-05-12T15:00:39+01:00"
-tags = ['django']
-+++
+---
+title: "Filtered aggregates lands in Django 2.0!"
+date: "2018-05-12T15:00:39+01:00"
+tags: ['django']
+---
 
 Big Django projects often suffer from a few problems regarding database modelling and relations. Django provides 
 incredibly easy to use tools to model your domain along with an awesomely powerful ORM to query on them. 

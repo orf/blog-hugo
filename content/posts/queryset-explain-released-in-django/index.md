@@ -1,8 +1,8 @@
-+++
-title = "Queryset.explain() released in Django 2.1"
-date = "2018-08-01T20:29:29+01:00"
-tags = ['django']
-+++
+---
+title: "Queryset.explain() released in Django 2.1"
+date: "2018-08-01T20:29:29+01:00"
+tags: ['django']
+---
 
 While working on any large-ish Django project you are bound to come across a slow query that's 
 perhaps missing an index or doing something else expensive. My workflow for diagnosing this was to 

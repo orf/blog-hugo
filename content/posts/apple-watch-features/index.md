@@ -1,8 +1,8 @@
-+++
-title = "Creating an index of Apple Watch/MacOS/iOS features per-country"
-date = "2019-06-04T21:52:41+01:00"
-tags = ["projects"]
-+++
+---
+title: "Creating an index of Apple Watch/MacOS/iOS features per-country"
+date: "2019-06-04T21:52:41+01:00"
+tags: ["projects"]
+---
 
 tl;dr: check out https://applewatchfeatures.com/, https://iosfeatures.com/ and https://macosfeatures.com/
 
