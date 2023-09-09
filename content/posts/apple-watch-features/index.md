@@ -14,8 +14,8 @@ Apple [does of course have a page that gives a breakdown](https://www.apple.com/
 but it's not exactly easy to read:
 
 <video autoplay loop playsinline muted>
-  <source src="./recording.mp4" type="video/mp4">
-  <source src="./recording.webm" type="video/webm">
+  <source src="./recording.mp4" type="video/mp4"/>
+  <source src="./recording.webm" type="video/webm"/>
   <img src="./recording.gif"/>
 </video>
 
