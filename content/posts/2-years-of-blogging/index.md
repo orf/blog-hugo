@@ -37,7 +37,8 @@ According to [Google Webmaster tools](https://www.google.com/webmasters/) some o
 ##### Viewer information
 I use Google Analytics for my website stats and it also tracks things like browser usage, operating system and screen resolution. 
 
-<table><tr><td><img src="./os_breakdown.png"></td><td><img src="./os_breakdown2.png"></td></tr></table>
+![](./os_breakdown.png)
+![](./os_breakdown2.png)
 
 #### Security stuff
 I found a  4 "grave" security issues in some software that got issued their own CVE numbers (which is awesome!):
