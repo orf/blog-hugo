@@ -9,7 +9,7 @@ tags:
 [My last post]({{< ref "posts/just-how-slow-are-django-templates" >}}) about the speed of Django's templating language caused a bit of a stir and it was clear that people didn't really have a clue how long the templates were taking to render in their applications.
 
 ##### Enter Template-timings
-[Template-timings](https://github.com/orf/django-debug-toolbar-template-timings) is a panel for [Django-debug-toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar) (which everyone should be using, right?) that lets you see a breakdown of the rendering process. It currently gives you timing information on each block and template rendered in a convenient panel. It works on {%raw%}{% blocks %}, {% extends %} and {% include %}'ed{%endraw%} templates.
+[Template-timings](https://github.com/orf/django-debug-toolbar-template-timings) is a panel for [Django-debug-toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar) (which everyone should be using, right?) that lets you see a breakdown of the rendering process. It currently gives you timing information on each block and template rendered in a convenient panel. It works on {% blocks %}, {% extends %} and {% include %}'ed templates.
 
 ![](./django-debug-toolbar_KPL2PKO7.png)
 
