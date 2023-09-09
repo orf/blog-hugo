@@ -22,17 +22,20 @@ Overall I'm pretty impressed with Autobahn, even though the docs are a bit crap.
 
 ### How to use:
 Grab the code from [the Github repo](https://github.com/orf/websocket_stdout_example). You need to install [Twisted](https://twistedmatrix.com/) and [AutoBahn](https://pypi.python.org/pypi/autobahn), and if you are running this on Windows you also require [PyWin32](https://sourceforge.net/projects/pywin32/). Once those are all installed you can run the script like so:
-
-    python runner.py [shell command to run]
-
+```
+python runner.py [shell command to run]
+```
 e.g:
 
-    python runner.py tail -F /var/log/nginx/access_log
+```
+python runner.py tail -F /var/log/nginx/access_log
+```
 
 or:
 
-    python runner.py /bin/sh -c "tail -F /var/log/nginx/access.log -n 150 | grep -v static --line-buffered | awk '{\$1=\"\"; print}'"
-
+```
+python runner.py /bin/sh -c "tail -F /var/log/nginx/access.log -n 150 | grep -v static --line-buffered | awk '{\$1=\"\"; print}'"
+```
 This should start a websocket server on port 9000, and the supplied index.html should connect to this and display the output. The .html file attempts to connect to localhost:9000, so you may need to change this if your .py file is running somewhere else or on a different port.
 
 The code:
@@ -123,4 +126,3 @@ if __name__ == "__main__":
     listenWS(factory)
     reactor.run()
 ```
-    

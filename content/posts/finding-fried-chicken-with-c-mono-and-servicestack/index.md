@@ -34,25 +34,28 @@ The users browser sends a request to a URL like this: [ https://www.kfc.co.uk/ou
 
 I used the extremely useful [Json.Net](https://www.nuget.org/packages/Newtonsoft.Json) library to parse the JSON response from this API. This library is brilliant when combined with C#'s dynamic keyword, for example the snippet below parses a response from the KFC website then writes all the found storenames and phone numbers to the console:
 
-
-    dynamic converted_data = JsonConvert.DeserializeObject<List<dynamic>>(kfc_response_data);
-    foreach (var entry in converted_data)
-    {
-        Console.WriteLine(entry.storeName);
-        Console.WriteLine(entry.phoneNumber);
-    }
+```
+dynamic converted_data = JsonConvert.DeserializeObject<List<dynamic>>(kfc_response_data);
+foreach (var entry in converted_data)
+{
+    Console.WriteLine(entry.storeName);
+    Console.WriteLine(entry.phoneNumber);
+}
+```
 
 #### Just-Eat
 Just-Eat was possibly the hardest to implement and took me quite a while to crack. It only accepts postcodes, this means the webservice needs to translate the latitude and longitude that the phone application sends it into a postcode: this is called [Reverse Geocoding](https://en.wikipedia.org/wiki/Reverse_geocoding). It is impossible to implement yourself with any degree of accuracy - thankfully there are a few services that offer this functionality, namely [Yahoos' GeoFinder](https://developer.yahoo.com/boss/geo/) and [Googles' Geocoding API](https://developers.google.com/maps/documentation/geocoding/). Word on the street as far as I could find is that Googles' API is superior quality, but must be associated with a "Google maps view". Yahoo however has a 'good enough' API with  generous free limits. Bing also offer a Geolocation service - which [I implemented](https://github.com/orf/FindMeChicken-mono/blob/master/FindMeChicken-ASP/Lib/BingMaps.cs) - but I found that sometimes the service would not return any results until you made the request again. Screw it.
 
 [I coded a mostly working](https://github.com/orf/FindMeChicken-mono/blob/master/FindMeChicken-ASP/Sources/JustEat/JustEatSource.cs) (if not a bit temperamental) module that scraped the HTML from the just-eat website using the [HTMLAgilityPack](https://nuget.org/packages/HtmlAgilityPack) library. HtmlAgilityPack has quite a nice API which revolves around using XPath queries to navigate through the document tree. The snippet below iterates through any **li** tag which has a class that contains the string 'cat':
 
-    var page = new HtmlDocument();
-    page.Load("https://www.mywebsite.com/afile.html");
-    foreach (var node in page.DocumentNode.SelectNodes(".//li[contains(@class,'cat')"))
-    {
-        Console.WriteLine("li tag found: ID = {0}", node.Attributes["id"]);
-    }
+```
+var page = new HtmlDocument();
+page.Load("https://www.mywebsite.com/afile.html");
+foreach (var node in page.DocumentNode.SelectNodes(".//li[contains(@class,'cat')"))
+{
+    Console.WriteLine("li tag found: ID = {0}", node.Attributes["id"]);
+}
+```
 
 Extracting information from websites by parsing their HTML is prone to breaking: in the example above if the web owner changed all his **li** tags to **div**'s then the code would break and have to be fixed. 
 
@@ -74,4 +77,3 @@ One weird thing with mono is the web service reference I added for the Just-Eat 
 
 
 ChickenChecker should be hitting the marketplace soon. Watch this space.
-    

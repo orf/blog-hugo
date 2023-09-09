@@ -18,7 +18,9 @@ These are the most interesting exploit I found. The first thing I noticed about 
 
 Two requests were sent, one with filename.txt and one with ../Macintosh/filename.txt (Can be subsituted with ./filename.txt). If the website was not properly validating the input and merely appending the filename on the end of a file path then both pages should be the same, which they are. The website was essentially doing this:
 
-    <?php send_file("C:/my_website/files/Macintosh/" . $GET['file_name'] ?>
+```php
+<?php send_file("C:/my_website/files/Macintosh/" . $GET['file_name'] ?>
+```
 
 which is insecure, because a malicious user could send "../../secret.txt" as the filename parameter, which would send the file "C:/my_website/files/Macintosh/../../passwords.txt" to the user. Because "../" in a path goes back a directory this path is the same as "C:/my_website/passwords.txt". I couldn't get this LFI to work and I ran out of patience (I later found it was possible, but a bit convoluted).
 
@@ -39,7 +41,9 @@ This shell simply displays a directory listing. I uploaded another one that let 
 ### Cross Site Scripting
 [Cross Site Scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) (or XSS for short) is the [second most dangerous web-app security issue](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project), and it's very common. When you accept input from a user that is possibly going to be displayed to them in the future, like a comment, or in the response to the request then it should always be sanitized and stripped of HTML tags. Code like the PHP below is vulnerable to XSS because a user could send the name "&lt;script&gt;alert('hello there')&lt;/script&gt;" which would cause an alert box to pop up on their screen. 
 
-    <?php echo "Hello " . $_GET['name'] ?>
+```php
+<?php echo "Hello " . $_GET['name'] ?>
+```
 
 This itself isn't dangerous, but a criminal mastermind could put _any_ code he wanted in the name parameter and send the link to someone unwitting. When they clicked it the code would execute in the context of the web-page, doing any number of malicious things. 
 
@@ -62,4 +66,3 @@ Each article on the site could be rated from 1 to 5, and an average would be dis
 ![](./votes_boundscheck_smaller_OLOAJMCL.png)
 
 You should *never* trust user input in a web application no more than a bank teller should trust a customer when he says he has enough money in his account for a withdrawal and not to bother checking. Always ensure that it matches what you expect or display an error message. 
-    

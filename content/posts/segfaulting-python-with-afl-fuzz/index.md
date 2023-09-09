@@ -28,10 +28,12 @@ For best results use Linux - OSX has some performance issues that make afl reall
 
 Downloading and compiling afl was really painless. Other than `build-essential` I didn't have to install any dependencies.
 
-    ➜ ~ sudo apt-get install build-essential
-    ➜ ~ wget https://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz
-    ➜ ~ tar xvf afl-latest.tgz && cd afl-2.06b
-    ➜ ~ make -j8
+```
+➜ ~ sudo apt-get install build-essential
+➜ ~ wget https://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz
+➜ ~ tar xvf afl-latest.tgz && cd afl-2.06b
+➜ ~ make -j8
+```
 
 After building the project with make you will have a few executables in the current directory including `afl-gcc`, `afl-fuzz` and `afl-whatsup`.
 
@@ -41,19 +43,23 @@ Now we have our `afl-fuzz` executable we need to make a program for it to fuzz. 
 
 So I reasoned the simplest way to do this was just download the cPython source code, compile the interpreter with `afl-gcc` and then run it through `afl-fuzz`. The stock interpreter executes code from a file because that's what its built to do. Let's go grab the source code:
 
-    ➜ ~ sudo apt-get install mercurial
-    ➜ ~ cd ~
-    ➜ ~ hg clone https://hg.python.org/cpython
-    ➜ ~ cd cpython
-    ➜ ~ hg checkout 3.5
-    ➜ ~ CC=~/afl-2.06b/afl-gcc ./configure && make -j8
+```
+➜ ~ sudo apt-get install mercurial
+➜ ~ cd ~
+➜ ~ hg clone https://hg.python.org/cpython
+➜ ~ cd cpython
+➜ ~ hg checkout 3.5
+➜ ~ CC=~/afl-2.06b/afl-gcc ./configure && make -j8
+```
 
 The configure script reads the name of the C compiler from an environment variable `CC`. By passing `CC=~/afl-2.06b/afl-gcc` you're telling it to use `afl-gcc` as the C compiler to build the interpreter. If you've done it right you should see lines line this in the output:
   
-    afl-as 2.06b by <lcamtuf@google.com>
-    [+] Instrumented 97 locations (64-bit, non-hardened mode, ratio 100%).
-    ../afl-gcc -pthread -c -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes    -Werror=declaration-after-statement   -I. -IInclude -I./Include    -DPy_BUILD_CORE -o Parser/grammar.o Parser/grammar.c
-    afl-cc 2.06b by <lcamtuf@google.com>
+```
+afl-as 2.06b by <lcamtuf@google.com>
+[+] Instrumented 97 locations (64-bit, non-hardened mode, ratio 100%).
+../afl-gcc -pthread -c -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes    -Werror=declaration-after-statement   -I. -IInclude -I./Include    -DPy_BUILD_CORE -o Parser/grammar.o Parser/grammar.c
+afl-cc 2.06b by <lcamtuf@google.com>
+```
 
 So now we have our special interpreter we have one more thing to do before we run it through `afl-fuzz`: make some test cases. `afl-fuzz` works best if you give it some example programs to initially work with, so create some files in a directory like `~/python_testcases` and fill them with simple Python syntax constructs, e.g:
 
@@ -71,7 +77,9 @@ yield from o.x()
 
 Then invoke `afl-fuzz` like so:
 
-    ➜ ~ ~/afl-2.06b/afl-fuzz -i python_testcases -o fuzz cpython/python @@
+```
+➜ ~ ~/afl-2.06b/afl-fuzz -i python_testcases -o fuzz cpython/python @@
+```
 
 You should see a screen like the one below:
 
@@ -190,4 +198,3 @@ for (i = 0; i < n_cellvars; i++) {
 ```
 
 The issue is that the line `PyObject *arg = PyTuple_GET_ITEM(varnames, j);` can be null if `varnames` is an empty tuple (which it can be if the pyc file is malformed). No null check is done on `arg`, which is passed to `PyUnicode_Compare` and this causes a segfault.
-    

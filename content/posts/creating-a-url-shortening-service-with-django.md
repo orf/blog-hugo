@@ -52,7 +52,7 @@ class Link(models.Model):
 
 This model is fairly basic - it stores a URL and a integer representing the number of times the link has been clicked (we will write the view for this later). The get_short_id() method returns the character representation of the ID - we have 62 possible characters (a-z A-Z 0-9) so we convert the number to base 62 and map the digits to characters in our alphabet. This means we can give visitors URL's like *https://mylinksite/abcde* and the *abcde* portion of the URL will hold the link ID. This looks a lot nicer than just using the numeric ID in the URL.
 
-Now create a simple template. The {% raw %}`{% if %}`{% endraw %} statements are there so we can display the generated URL to the user
+Now create a simple template. The `{% if %}` statements are there so we can display the generated URL to the user
 
 ```html
 <html>
@@ -118,4 +118,3 @@ urlpatterns = patterns('',
 ```
 
 And thats a wrap. The code linked at the top of the page has a few more bells and whistles, including per-day visitor tracking and graphs (soon), but the core is the same. In my opinion creating a URL shortener is more simple than the canonical "create a blog" introduction project.
-    
