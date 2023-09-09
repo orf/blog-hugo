@@ -10,14 +10,7 @@ I recently brought an Apple Watch. It's a pretty fantastic product! One thing th
 annoyed me while evaluating if I should buy it is that features can vary quite drastically per country, 
 and there was no simple way to get a list of the features available where I live!
 
-Apple [does of course have a page that gives a breakdown](https://www.apple.com/watchos/feature-availability/), 
-but it's not exactly easy to read:
-
-<video autoplay loop playsinline muted>
-  <source src="./recording.mp4" type="video/mp4"/>
-  <source src="./recording.webm" type="video/webm"/>
-  <img src="./recording.gif"/>
-</video>
+Apple [does of course have a page that gives a breakdown](https://www.apple.com/watchos/feature-availability/), but it's not exactly easy to read.
 
 It gives a big breakdown of every feature and every country. You would have to go and compose a list yourself!
 
