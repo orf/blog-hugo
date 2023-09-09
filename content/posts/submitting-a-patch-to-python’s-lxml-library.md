@@ -1,6 +1,7 @@
 ---
 title: "Submitting a patch to Python’s lxml library"
 date: 2014-01-09 07:30:15.817398
+slug: submitting-a-patch-to-pythons-lxml-library
 tags:
    - projects
 ---

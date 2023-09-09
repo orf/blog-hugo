@@ -1,6 +1,7 @@
 ---
 title: "Purchasing a £30,000 numberplate for the price of a bus ticket"
 date: 2013-10-07 01:40:33.789415
+slug: purchasing-a-30000-numberplate-for-the-price-of-a-bus-ticket
 tags:
    - security
 ---
@@ -29,4 +30,3 @@ And finally the payment page:
 ![](./purchasing_4QISBW5X.png)
 
 I would have certainly been able to complete the payment but whether or not the order would have succeeded depends on how automated regtransfers.co.uk is. I doubt it's completely automated so I expect someone along the line would have flagged this up and stopped the transfer, but who knows? This goes to show that while using a framework can protect you against common flaws like SQL injection or XSS business logic still needs to be tested and inputs still need to be validated.
-    
