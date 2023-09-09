@@ -6,7 +6,7 @@ tags:
 - django
 ---
 
-When I was working on [adding `queryset.explain()` to Django]({{< relref "queryset-explain-released-in-django/index.md" >}})
+When I was working on [adding `queryset.explain()` to Django]({{< ref "posts/queryset-explain-released-in-django" >}})
 I got annoyed by how complex it was to set up a local Django environment with multiple databases and versions.
 The traditional way of handling this was to use [django-box](https://github.com/django/django-box) which utilizes 
 Vagrant to spin up a VM and install different types of database. But it suffered from a few problems:
